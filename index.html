@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inter&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="logo">
+        <img src="./imagenes/Logo.png" alt="Logo">
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea class="text__area" cols="30" rows="10" placeholder= "Ingrese texto aquí"></textarea>
+            <div class="aclaracion">
+                <h6>Solo letras minúsculas y sin acentos</h6>
+            </div>
+        </section>
+        <section class="botones">
+            <div class="btn">
+                <button class="encripta" onclick="button()">Encriptar</button>
+                <button class="desencripta" onclick="button__des()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="encriptado">
+            <textarea class="mensaje__area" cols="20" rows="10" id="myInput" ></textarea>
+            <button onclick="funcion__copiar()" class="copiar">Copiar</button>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
